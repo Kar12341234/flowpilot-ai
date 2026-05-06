@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #050816;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(5, 8, 22, 0.92), #050816 42%),
+    #050816;
+  color: #eef2ff;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(129, 140, 248, 0.42);
+  color: #ffffff;
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(22px);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ffffff, #c4b5fd 44%, #7dd3fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.button-glow {
+  box-shadow: 0 14px 42px rgba(99, 102, 241, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.32);
+}
+
+.grid-mask {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+.chart-bar {
+  background: linear-gradient(180deg, #7dd3fc 0%, #818cf8 48%, #a855f7 100%);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.28);
+}
