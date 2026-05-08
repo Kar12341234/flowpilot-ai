@@ -1,7 +1,7 @@
-import { Building2, Github, Linkedin, Twitter } from "lucide-react";
+import { Crown, Github, Linkedin, Twitter } from "lucide-react";
 import { Container } from "@/components/ui";
 
-const links = ["小程序案例", "界面展示", "交付流程", "常见问题"];
+const links = ["圈层权益", "VIP 界面", "交付流程", "常见问题"];
 const socials = [
   { label: "Twitter", icon: Twitter },
   { label: "GitHub", icon: Github },
@@ -10,21 +10,21 @@ const socials = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white py-10">
+    <footer className="border-t border-amber-300/12 bg-black py-10">
       <Container className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div>
           <a href="#" className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-blue-100 bg-blue-700">
-              <Building2 className="h-5 w-5 text-white" aria-hidden="true" />
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-amber-300/20 bg-gradient-to-br from-amber-300 to-amber-700">
+              <Crown className="h-5 w-5 text-zinc-950" aria-hidden="true" />
             </span>
-            <span className="text-lg font-semibold tracking-tight text-slate-950">FlowPilot AI</span>
+            <span className="text-lg font-semibold tracking-tight text-white">FlowPilot AI</span>
           </a>
-          <p className="mt-4 text-sm text-slate-500">© 2026 FlowPilot AI. 高端小程序案例 Demo.</p>
+          <p className="mt-4 text-sm text-zinc-500">© 2026 FlowPilot AI. 圈层会员小程序 Demo.</p>
         </div>
 
-        <nav className="flex flex-wrap gap-5 text-sm font-medium text-slate-500">
+        <nav className="flex flex-wrap gap-5 text-sm font-medium text-zinc-500">
           {links.map((link) => (
-            <a key={link} href="#" className="transition hover:text-blue-700">
+            <a key={link} href="#" className="transition hover:text-amber-200">
               {link}
             </a>
           ))}
@@ -36,7 +36,7 @@ export function Footer() {
               key={social.label}
               href="#"
               aria-label={social.label}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 transition hover:border-blue-200 hover:text-blue-700"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-amber-300/14 bg-white/[0.05] text-zinc-500 transition hover:border-amber-300/34 hover:text-amber-200"
             >
               <social.icon className="h-4 w-4" aria-hidden="true" />
             </a>

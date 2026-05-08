@@ -23,9 +23,9 @@ export function SectionHeader({
 }) {
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-blue-700">{eyebrow}</p>
-      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">{title}</h2>
-      <p className="mt-5 text-base leading-8 text-slate-600 sm:text-lg">{description}</p>
+      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-amber-300">{eyebrow}</p>
+      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">{title}</h2>
+      <p className="mt-5 text-base leading-8 text-zinc-400 sm:text-lg">{description}</p>
     </div>
   );
 }
@@ -33,8 +33,8 @@ export function SectionHeader({
 export function Button({ children, href = "#", variant = "primary", className = "" }: ButtonProps) {
   const styles =
     variant === "primary"
-      ? "button-glow bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-600 text-white hover:scale-[1.02] hover:from-blue-800 hover:to-cyan-700"
-      : "border border-slate-200 bg-white text-slate-800 shadow-sm hover:border-blue-200 hover:bg-blue-50";
+      ? "button-glow bg-gradient-to-r from-amber-300 via-yellow-500 to-amber-700 text-zinc-950 hover:scale-[1.02] hover:from-amber-200 hover:to-amber-600"
+      : "border border-amber-300/28 bg-white/[0.06] text-amber-100 shadow-sm hover:border-amber-300/50 hover:bg-white/[0.1]";
 
   return (
     <a

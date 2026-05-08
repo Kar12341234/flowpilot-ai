@@ -10,10 +10,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "FlowPilot AI | 高端小程序案例 Demo",
   description:
-    "面向中国大陆客户的高端小程序案例展示，覆盖品牌展示、会员运营、预约服务、商城转化与数据看板。",
+    "高端小程序案例展示，覆盖品牌展示、会员运营、预约服务、商城转化与数据看板。",
   openGraph: {
     title: "FlowPilot AI 高端小程序案例",
-    description: "让客户直观看到高级 UI 小程序可以如何承载品牌、服务和交易。",
+    description: "展示高级 UI 小程序如何承载品牌、服务和交易。",
     type: "website"
   }
 };
