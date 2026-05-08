@@ -3,24 +3,24 @@ import { Button, Container, SectionHeader } from "@/components/ui";
 
 const plans = [
   {
-    name: "诊断评估",
-    price: "第 1 周",
-    description: "梳理组织流程、系统现状和经营指标，定义可演示的样板场景。",
-    features: ["业务访谈", "数据口径梳理", "痛点优先级", "Demo 蓝图"],
+    name: "视觉方案",
+    price: "1-2 天",
+    description: "先出首页风格、色彩、组件和核心页面方向，让客户快速判断质感是否符合品牌。",
+    features: ["首页视觉稿", "核心组件", "品牌配色", "交互动效方向"],
     featured: false
   },
   {
-    name: "样板搭建",
-    price: "第 2-4 周",
-    description: "搭建案例看板、AI 流程助手和关键业务闭环，形成可讲、可看、可点的演示版本。",
-    features: ["经营驾驶舱", "流程自动化", "权限分层", "演示脚本"],
+    name: "小程序 Demo",
+    price: "3-7 天",
+    description: "搭建可点击的小程序演示版本，包含首页、详情、预约、会员、商城等关键流程。",
+    features: ["可点击原型", "页面动效", "业务流程", "演示链接"],
     featured: true
   },
   {
-    name: "复制推广",
-    price: "第 5 周+",
-    description: "将样板复制到区域、事业部或更多业务线，逐步沉淀企业级 AI 运营中台。",
-    features: ["多组织复制", "指标复盘", "系统集成", "运营培训"],
+    name: "正式开发",
+    price: "按需求",
+    description: "进入真实小程序开发，接入后台、支付、预约、会员、客服和运营数据。",
+    features: ["微信小程序", "后台管理", "支付/预约", "上线部署"],
     featured: false
   }
 ];
@@ -30,9 +30,9 @@ export function Pricing() {
     <section id="pricing" className="relative py-24 sm:py-28">
       <Container>
         <SectionHeader
-          eyebrow="Implementation"
-          title="典型案例的落地实施路径"
-          description="用短周期样板先证明价值，再按组织层级逐步推广，降低客户决策阻力。"
+          eyebrow="Delivery"
+          title="从高级 UI 到可上线小程序"
+          description="先让客户看到高质量界面，再推进可点击 Demo 和正式开发，降低沟通成本。"
         />
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
           {plans.map((plan) => (
@@ -46,7 +46,7 @@ export function Pricing() {
             >
               {plan.featured ? (
                 <span className="absolute right-5 top-5 rounded-full bg-blue-700 px-3 py-1 text-xs font-bold text-white">
-                  样板核心
+                  推荐展示
                 </span>
               ) : null}
               <h3 className="text-xl font-semibold text-slate-950">{plan.name}</h3>
@@ -55,7 +55,7 @@ export function Pricing() {
                 <span className="text-4xl font-semibold tracking-tight text-slate-950">{plan.price}</span>
               </div>
               <Button href="#" variant={plan.featured ? "primary" : "secondary"} className="mt-8 w-full">
-                查看阶段内容
+                咨询交付方式
               </Button>
               <ul className="mt-8 space-y-4">
                 {plan.features.map((feature) => (

@@ -1,7 +1,7 @@
 import { Building2, Github, Linkedin, Twitter } from "lucide-react";
 import { Container } from "@/components/ui";
 
-const links = ["案例概览", "成效看板", "实施路径", "常见问题"];
+const links = ["小程序案例", "界面展示", "交付流程", "常见问题"];
 const socials = [
   { label: "Twitter", icon: Twitter },
   { label: "GitHub", icon: Github },
@@ -19,7 +19,7 @@ export function Footer() {
             </span>
             <span className="text-lg font-semibold tracking-tight text-slate-950">FlowPilot AI</span>
           </a>
-          <p className="mt-4 text-sm text-slate-500">© 2026 FlowPilot AI. 企业智能运营典型案例 Demo.</p>
+          <p className="mt-4 text-sm text-slate-500">© 2026 FlowPilot AI. 高端小程序案例 Demo.</p>
         </div>
 
         <nav className="flex flex-wrap gap-5 text-sm font-medium text-slate-500">

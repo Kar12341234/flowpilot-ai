@@ -3,20 +3,20 @@ import { Container, SectionHeader } from "@/components/ui";
 
 const faqs = [
   {
-    question: "这个 Demo 适合给什么客户看？",
-    answer: "适合制造、园区、连锁、企业服务等 B2B 客户，尤其是关注流程效率、经营数据和管理可视化的决策层。"
+    question: "这个页面主要给客户看什么？",
+    answer: "主要让客户直观看到我们能做高质感小程序 UI，并且能覆盖品牌展示、预约、会员、商城和后台运营。"
   },
   {
-    question: "是否需要真实客户数据？",
-    answer: "不需要。当前版本使用脱敏假数据，适合作品集、售前演示和方案讲解；后续可替换为客户自己的数据结构。"
+    question: "能不能换成客户自己的行业？",
+    answer: "可以。美容、餐饮、零售、教育、会所、园区、企业服务都能替换文案、配色、页面结构和业务流程。"
   },
   {
-    question: "能否部署到 Netlify 或 Vercel？",
-    answer: "可以。项目是 Next.js 静态页面展示，不依赖后端服务，构建通过后即可部署。"
+    question: "这是真正的微信小程序吗？",
+    answer: "当前是网页展示 Demo，用来给客户看视觉和业务能力；正式项目可以开发成真实微信小程序并提交审核上线。"
   },
   {
-    question: "后续能扩展成真实系统吗？",
-    answer: "可以。当前是前端 Demo，后续可接入 CRM、OA、ERP 或数据仓库，扩展为真实的企业运营工作台。"
+    question: "后续能不能接支付和后台？",
+    answer: "可以。可扩展微信支付、预约管理、订单管理、会员积分、客服消息和内容管理后台。"
   }
 ];
 
@@ -26,8 +26,8 @@ export function FAQ() {
       <Container>
         <SectionHeader
           eyebrow="FAQ"
-          title="客户会议里常见的四个问题"
-          description="提前覆盖客户最关心的数据、部署、扩展和演示适配问题。"
+          title="客户看小程序 Demo 时最常问的问题"
+          description="提前回答客户对行业适配、真实上线、后台管理和支付能力的疑问。"
         />
         <div className="mx-auto mt-12 max-w-3xl space-y-4">
           {faqs.map((faq) => (

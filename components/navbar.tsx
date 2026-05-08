@@ -2,9 +2,9 @@ import { Building2, Menu } from "lucide-react";
 import { Button, Container } from "@/components/ui";
 
 const navItems = [
-  { label: "案例概览", href: "#features" },
-  { label: "成效看板", href: "#dashboard" },
-  { label: "实施路径", href: "#pricing" },
+  { label: "小程序案例", href: "#features" },
+  { label: "界面展示", href: "#dashboard" },
+  { label: "交付流程", href: "#pricing" },
   { label: "常见问题", href: "#faq" }
 ];
 
@@ -18,7 +18,7 @@ export function Navbar() {
           </span>
           <span>
             <span className="block text-lg font-semibold tracking-tight text-slate-950">FlowPilot AI</span>
-            <span className="block text-xs font-medium text-slate-500">企业智能运营案例</span>
+            <span className="block text-xs font-medium text-slate-500">高端小程序设计开发</span>
           </span>
         </a>
 
@@ -32,10 +32,10 @@ export function Navbar() {
 
         <div className="hidden items-center gap-3 md:flex">
           <a href="#" className="rounded-full px-4 py-2 text-sm font-semibold text-slate-600 transition hover:text-slate-950">
-            客户登录
+            案例库
           </a>
           <Button href="#pricing" className="min-h-10 px-4">
-            预约演示
+            咨询小程序
           </Button>
         </div>
 

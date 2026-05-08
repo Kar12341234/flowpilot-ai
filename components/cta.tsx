@@ -10,12 +10,12 @@ export function CTA() {
           <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 ring-1 ring-white/30">
             <Rocket className="h-7 w-7 text-white" aria-hidden="true" />
           </div>
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">让客户一眼看懂 AI 如何创造业务价值</h2>
+          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">让客户一眼看到高级小程序质感</h2>
           <p className="mx-auto mt-5 max-w-2xl leading-8 text-blue-50">
-            用清晰的典型案例、真实的业务语言和可视化成效，让演示从“技术展示”变成“管理层决策材料”。
+            用手机端界面、业务流程和后台能力一起展示，让客户相信这不是普通页面，而是可落地的小程序方案。
           </p>
           <Button href="#pricing" variant="secondary" className="mt-8">
-            进入实施路径
+            查看交付流程
           </Button>
         </div>
       </Container>
