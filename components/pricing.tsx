@@ -3,24 +3,24 @@ import { Button, Container, SectionHeader } from "@/components/ui";
 
 const plans = [
   {
-    name: "Starter",
-    price: "$19",
-    description: "For creators and solo operators starting with AI automation.",
-    features: ["5 active workflows", "Basic analytics", "Email support", "1,000 AI runs"],
+    name: "诊断评估",
+    price: "第 1 周",
+    description: "梳理组织流程、系统现状和经营指标，定义可演示的样板场景。",
+    features: ["业务访谈", "数据口径梳理", "痛点优先级", "Demo 蓝图"],
     featured: false
   },
   {
-    name: "Pro",
-    price: "$49",
-    description: "For growing teams that need collaboration and reliable scale.",
-    features: ["25 active workflows", "Advanced analytics", "Team permissions", "20,000 AI runs"],
+    name: "样板搭建",
+    price: "第 2-4 周",
+    description: "搭建案例看板、AI 流程助手和关键业务闭环，形成可讲、可看、可点的演示版本。",
+    features: ["经营驾驶舱", "流程自动化", "权限分层", "演示脚本"],
     featured: true
   },
   {
-    name: "Business",
-    price: "$99",
-    description: "For companies with complex operations and security needs.",
-    features: ["Unlimited workflows", "Custom integrations", "Priority support", "Audit logs"],
+    name: "复制推广",
+    price: "第 5 周+",
+    description: "将样板复制到区域、事业部或更多业务线，逐步沉淀企业级 AI 运营中台。",
+    features: ["多组织复制", "指标复盘", "系统集成", "运营培训"],
     featured: false
   }
 ];
@@ -30,9 +30,9 @@ export function Pricing() {
     <section id="pricing" className="relative py-24 sm:py-28">
       <Container>
         <SectionHeader
-          eyebrow="Pricing"
-          title="Simple plans that scale with your workflow"
-          description="Start small, upgrade when your automations become part of the operating rhythm."
+          eyebrow="Implementation"
+          title="典型案例的落地实施路径"
+          description="用短周期样板先证明价值，再按组织层级逐步推广，降低客户决策阻力。"
         />
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
           {plans.map((plan) => (
@@ -40,28 +40,27 @@ export function Pricing() {
               key={plan.name}
               className={`relative rounded-3xl border p-6 transition duration-300 hover:-translate-y-1 ${
                 plan.featured
-                  ? "border-sky-300/34 bg-gradient-to-br from-indigo-500/18 via-white/[0.07] to-sky-400/12 shadow-glow"
-                  : "border-white/[0.1] bg-white/[0.045] hover:border-sky-300/22 hover:bg-white/[0.07]"
+                  ? "border-blue-200 bg-gradient-to-br from-blue-50 via-white to-cyan-50 shadow-[0_24px_70px_rgba(37,99,235,0.14)]"
+                  : "border-slate-200 bg-white shadow-sm hover:border-blue-200 hover:bg-blue-50/40"
               }`}
             >
               {plan.featured ? (
-                <span className="absolute right-5 top-5 rounded-full bg-sky-300 px-3 py-1 text-xs font-bold text-slate-950">
-                  Most popular
+                <span className="absolute right-5 top-5 rounded-full bg-blue-700 px-3 py-1 text-xs font-bold text-white">
+                  样板核心
                 </span>
               ) : null}
-              <h3 className="text-xl font-semibold text-white">{plan.name}</h3>
-              <p className="mt-4 min-h-[56px] text-sm leading-7 text-slate-400">{plan.description}</p>
+              <h3 className="text-xl font-semibold text-slate-950">{plan.name}</h3>
+              <p className="mt-4 min-h-[84px] text-sm leading-7 text-slate-600">{plan.description}</p>
               <div className="mt-8 flex items-end gap-1">
-                <span className="text-5xl font-semibold tracking-tight text-white">{plan.price}</span>
-                <span className="pb-2 text-slate-400">/mo</span>
+                <span className="text-4xl font-semibold tracking-tight text-slate-950">{plan.price}</span>
               </div>
               <Button href="#" variant={plan.featured ? "primary" : "secondary"} className="mt-8 w-full">
-                Get Started
+                查看阶段内容
               </Button>
               <ul className="mt-8 space-y-4">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-sm text-slate-300">
-                    <CheckCircle2 className="h-5 w-5 text-emerald-300" aria-hidden="true" />
+                  <li key={feature} className="flex items-center gap-3 text-sm text-slate-600">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-600" aria-hidden="true" />
                     {feature}
                   </li>
                 ))}
