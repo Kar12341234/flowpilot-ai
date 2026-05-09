@@ -1,7 +1,12 @@
+"use client";
+
 import { Rocket } from "lucide-react";
+import { useLanguage } from "@/components/language-provider";
 import { Button, Container } from "@/components/ui";
 
 export function CTA() {
+  const { copy } = useLanguage();
+
   return (
     <section className="relative py-16 sm:py-24">
       <Container>
@@ -10,12 +15,12 @@ export function CTA() {
           <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-300/15 ring-1 ring-amber-300/25">
             <Rocket className="h-7 w-7 text-amber-200" aria-hidden="true" />
           </div>
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">一眼看到圈层小程序的身份感</h2>
+          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">{copy.cta.title}</h2>
           <p className="mx-auto mt-5 max-w-2xl leading-8 text-amber-50/75">
-            深色、金色、VIP、认证标识与私享权益一起呈现，让小程序看起来更高端、更有门槛。
+            {copy.cta.desc}
           </p>
           <Button href="#pricing" variant="secondary" className="mt-8">
-            查看交付流程
+            {copy.cta.button}
           </Button>
         </div>
       </Container>

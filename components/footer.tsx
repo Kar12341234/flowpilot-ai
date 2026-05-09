@@ -1,7 +1,9 @@
+"use client";
+
 import { Crown, Github, Linkedin, Twitter } from "lucide-react";
+import { useLanguage } from "@/components/language-provider";
 import { Container } from "@/components/ui";
 
-const links = ["圈层权益", "VIP 界面", "交付流程", "常见问题"];
 const socials = [
   { label: "Twitter", icon: Twitter },
   { label: "GitHub", icon: Github },
@@ -9,6 +11,8 @@ const socials = [
 ];
 
 export function Footer() {
+  const { copy } = useLanguage();
+
   return (
     <footer className="border-t border-amber-300/12 bg-black py-10">
       <Container className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
@@ -19,11 +23,11 @@ export function Footer() {
             </span>
             <span className="text-lg font-semibold tracking-tight text-white">FlowPilot AI</span>
           </a>
-          <p className="mt-4 text-sm text-zinc-500">© 2026 FlowPilot AI. 圈层会员小程序 Demo.</p>
+          <p className="mt-4 text-sm text-zinc-500">{copy.footer.copyright}</p>
         </div>
 
         <nav className="flex flex-wrap gap-5 text-sm font-medium text-zinc-500">
-          {links.map((link) => (
+          {copy.nav.links.map((link) => (
             <a key={link} href="#" className="transition hover:text-amber-200">
               {link}
             </a>
